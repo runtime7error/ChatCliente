@@ -40,50 +40,56 @@
             // 
             // txtServidorIP
             // 
-            this.txtServidorIP.Location = new System.Drawing.Point(90, 23);
+            this.txtServidorIP.Location = new System.Drawing.Point(120, 28);
+            this.txtServidorIP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtServidorIP.Name = "txtServidorIP";
-            this.txtServidorIP.Size = new System.Drawing.Size(169, 20);
+            this.txtServidorIP.Size = new System.Drawing.Size(224, 22);
             this.txtServidorIP.TabIndex = 0;
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(90, 56);
+            this.txtUsuario.Location = new System.Drawing.Point(120, 69);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(169, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(224, 22);
             this.txtUsuario.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 27);
+            this.label1.Location = new System.Drawing.Point(20, 33);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 13);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Servidor IP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 61);
+            this.label2.Location = new System.Drawing.Point(24, 75);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(57, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Usuário";
             // 
             // txtLog
             // 
-            this.txtLog.Location = new System.Drawing.Point(21, 92);
+            this.txtLog.Location = new System.Drawing.Point(28, 113);
+            this.txtLog.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(340, 327);
+            this.txtLog.Size = new System.Drawing.Size(452, 402);
             this.txtLog.TabIndex = 4;
             // 
             // btnConectar
             // 
-            this.btnConectar.Location = new System.Drawing.Point(285, 52);
+            this.btnConectar.Location = new System.Drawing.Point(380, 64);
+            this.btnConectar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(75, 23);
+            this.btnConectar.Size = new System.Drawing.Size(100, 28);
             this.btnConectar.TabIndex = 5;
             this.btnConectar.Text = "&Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
@@ -91,17 +97,19 @@
             // 
             // txtMensagem
             // 
-            this.txtMensagem.Location = new System.Drawing.Point(21, 430);
+            this.txtMensagem.Location = new System.Drawing.Point(28, 529);
+            this.txtMensagem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMensagem.Name = "txtMensagem";
-            this.txtMensagem.Size = new System.Drawing.Size(238, 20);
+            this.txtMensagem.Size = new System.Drawing.Size(316, 22);
             this.txtMensagem.TabIndex = 6;
             this.txtMensagem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMensagem_KeyPress);
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(279, 430);
+            this.btnEnviar.Location = new System.Drawing.Point(372, 529);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(84, 23);
+            this.btnEnviar.Size = new System.Drawing.Size(112, 28);
             this.btnEnviar.TabIndex = 7;
             this.btnEnviar.Text = "&Enviar";
             this.btnEnviar.UseVisualStyleBackColor = true;
@@ -109,10 +117,11 @@
             // 
             // frmCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(382, 462);
+            this.BackgroundImage = global::ChatCliente.Properties.Resources.PCdjDu;
+            this.ClientSize = new System.Drawing.Size(509, 569);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.btnConectar);
@@ -121,6 +130,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtServidorIP);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCliente";
             this.Text = "Chat - Cliente";
             this.ResumeLayout(false);
